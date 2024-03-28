@@ -20,35 +20,65 @@
         <img class="phoneImage" src="img/celularList.png" alt="celularList" />
       </div>
 
-      <form>
+      <form id="myForm">
         <h1 class="title">Liste o produto</h1>
         <div class="productAndValue">
-          <label for="product">Product's name</label><label for="value">Value</label>
-          <input id="product" class="product" type="text" placeholder="Product's name" />
+          <label for="product">Product's name</label
+          ><label for="value">Value</label>
+          <input
+            id="product"
+            class="product"
+            type="text"
+            placeholder="Product's name"
+          />
 
           <input id="value" class="value" type="number" placeholder="value" />
         </div>
 
         <div class="descriptionContent">
           <label for="description">Description</label>
-          <input id="description" class="description" type="text" placeholder="description" />
+          <input
+            id="description"
+            class="description"
+            type="text"
+            placeholder="description"
+          />
         </div>
 
         <div class="inputRadioContent">
-          <label for="opcaoYes">
-            <input id="opcaoYes" class="radioYes" type="radio" name="opcao" value="sim" /> Sim
+          <p>Is the product for sale?</p>
+
+          <label class="lbYes" for="opcaoYes">
+            <input
+              id="opcaoYes"
+              class="radioYes"
+              type="radio"
+              name="opcao"
+              value="sim"
+            />
+            Sim
           </label>
 
-          <label for="opcaoNo">
-            <input id="opcaoNo" class="radioNo" type="radio" name="opcao" value="nao" /> Não
+          <label class="lbNo" for="opcaoNo">
+            <input
+              id="opcaoNo"
+              class="radioNo"
+              type="radio"
+              name="opcao"
+              value="nao"
+            />
+            Não
           </label>
         </div>
 
         <div class="subContent">
-          <button class="buttonFormSub" type="submit">Cadastrar produto</button>
+          <button id="buttonSubmit" class="buttonFormSub" type="submit">Cadastrar produto</button>
         </div>
 
-        <div class="listProduct"></div>
+        <div class="listProduct">
+          <ul id="ulProduct">
+          </ul>
+        </div>
       </form>
     </main>
     <script src="main.js"></script>
