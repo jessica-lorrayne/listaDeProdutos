@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/lista.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lista de Produtos</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img class="phoneImage" src="img/celularList.png" alt="celularList" />
+      </div>
+
+      <form>
+        <h1 class="title">Liste o produto</h1>
+        <div class="productAndValue">
+          <label for="product">Product's name</label><label for="value">Value</label>
+          <input id="product" class="product" type="text" placeholder="Product's name" />
+
+          <input id="value" class="value" type="number" placeholder="value" />
+        </div>
+
+        <div class="descriptionContent">
+          <label for="description">Description</label>
+          <input id="description" class="description" type="text" placeholder="description" />
+        </div>
+
+        <div class="inputRadioContent">
+          <label for="opcaoYes">
+            <input id="opcaoYes" class="radioYes" type="radio" name="opcao" value="sim" /> Sim
+          </label>
+
+          <label for="opcaoNo">
+            <input id="opcaoNo" class="radioNo" type="radio" name="opcao" value="nao" /> Não
+          </label>
+        </div>
+
+        <div class="subContent">
+          <button class="buttonFormSub" type="submit">Cadastrar produto</button>
+        </div>
+
+        <div class="listProduct"></div>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
